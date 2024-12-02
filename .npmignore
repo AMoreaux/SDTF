@@ -1,0 +1,11 @@
+# https://docs.npmjs.com/cli/v6/using-npm/developers#keeping-files-out-of-your-package
+
+reports
+scripts
+tests
+
+.gitignore
+generated-documentation.md
+tsconfig.json
+vite.config.ts
+*.tsbuildinfo

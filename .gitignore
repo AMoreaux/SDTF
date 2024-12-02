@@ -1,0 +1,35 @@
+# Node modules
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Debugging
+.vscode/launch.json
+.idea
+
+# Test coverage
+coverage
+lcov-report
+
+# Build files
+dist/
+out/
+build/
+
+# Environment variables
+.env
+
+# Mac OS
+.DS_Store
+
+# Other
+*.sublime-workspace
+*.sublime-project
+*.swp

@@ -1,0 +1,990 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`designTokenDefinitions > validateSpecifyAliasableDesignToken > should validate a token with $description and $extensions 1`] = `
+[ZodError: [
+  {
+    "code": "invalid_union_discriminator",
+    "options": [
+      "string",
+      "number",
+      "boolean",
+      "null",
+      "array",
+      "object",
+      "integerNumber",
+      "zeroToOneNumber",
+      "arcDegreeNumber",
+      "rgbColorNumber",
+      "positiveNumber",
+      "positiveIntegerNumber",
+      "percentageNumber",
+      "hexadecimalColorString",
+      "bitmap",
+      "bitmapFormat",
+      "bitmaps",
+      "blur",
+      "border",
+      "borderStyle",
+      "borderStyleLineCap",
+      "breakpoint",
+      "color",
+      "cubicBezier",
+      "dimension",
+      "dimensionUnit",
+      "duration",
+      "durationUnit",
+      "font",
+      "fontFamily",
+      "fontFeature",
+      "fontFeatures",
+      "fontFormat",
+      "fontStyle",
+      "fontWeight",
+      "gradient",
+      "gradients",
+      "opacity",
+      "radii",
+      "radius",
+      "shadow",
+      "shadows",
+      "shadowType",
+      "spacing",
+      "spacings",
+      "stepsTimingFunction",
+      "textAlignHorizontal",
+      "textAlignVertical",
+      "textDecoration",
+      "textStyle",
+      "textTransform",
+      "transition",
+      "vector",
+      "vectorFormat",
+      "vectors",
+      "zIndex"
+    ],
+    "path": [
+      "$type"
+    ],
+    "message": "Invalid discriminator value. Expected 'string' | 'number' | 'boolean' | 'null' | 'array' | 'object' | 'integerNumber' | 'zeroToOneNumber' | 'arcDegreeNumber' | 'rgbColorNumber' | 'positiveNumber' | 'positiveIntegerNumber' | 'percentageNumber' | 'hexadecimalColorString' | 'bitmap' | 'bitmapFormat' | 'bitmaps' | 'blur' | 'border' | 'borderStyle' | 'borderStyleLineCap' | 'breakpoint' | 'color' | 'cubicBezier' | 'dimension' | 'dimensionUnit' | 'duration' | 'durationUnit' | 'font' | 'fontFamily' | 'fontFeature' | 'fontFeatures' | 'fontFormat' | 'fontStyle' | 'fontWeight' | 'gradient' | 'gradients' | 'opacity' | 'radii' | 'radius' | 'shadow' | 'shadows' | 'shadowType' | 'spacing' | 'spacings' | 'stepsTimingFunction' | 'textAlignHorizontal' | 'textAlignVertical' | 'textDecoration' | 'textStyle' | 'textTransform' | 'transition' | 'vector' | 'vectorFormat' | 'vectors' | 'zIndex'"
+  }
+]]
+`;
+
+exports[`designTokenDefinitions > validateSpecifyAliasableDesignToken > should validate a token with $description and $extensions 2`] = `
+[ZodError: [
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "object",
+            "received": "undefined",
+            "path": [
+              "$value"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "object",
+            "received": "undefined",
+            "path": [
+              "$value"
+            ],
+            "message": "Required"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "$value"
+    ],
+    "message": "Invalid input"
+  }
+]]
+`;
+
+exports[`designTokenDefinitions > validateSpecifyAliasableDesignToken > should validate all available token types 1`] = `
+[ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "$description"
+    ],
+    "message": "Expected string, received number"
+  }
+]]
+`;
+
+exports[`designTokenDefinitions > validateSpecifyAliasableDesignToken > should validate all available token types 2`] = `
+[ZodError: [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "number",
+    "path": [
+      "$extensions"
+    ],
+    "message": "Expected object, received number"
+  }
+]]
+`;
+
+exports[`designTokenDefinitions > validateSpecifyAliasableDesignToken > should validate all available token types 3`] = `
+[ZodError: [
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "object",
+            "received": "string",
+            "path": [
+              "$value"
+            ],
+            "message": "Expected object, received string"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "object",
+            "received": "string",
+            "path": [
+              "$value"
+            ],
+            "message": "Expected object, received string"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "$value"
+    ],
+    "message": "Invalid input"
+  },
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "function",
+            "path": [
+              "$extensions",
+              "someExtension"
+            ],
+            "message": "Expected string, received function"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "number",
+            "received": "function",
+            "path": [
+              "$extensions",
+              "someExtension"
+            ],
+            "message": "Expected number, received function"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "boolean",
+            "received": "function",
+            "path": [
+              "$extensions",
+              "someExtension"
+            ],
+            "message": "Expected boolean, received function"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "null",
+            "received": "function",
+            "path": [
+              "$extensions",
+              "someExtension"
+            ],
+            "message": "Expected null, received function"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "object",
+            "received": "function",
+            "path": [
+              "$extensions",
+              "someExtension"
+            ],
+            "message": "Expected object, received function"
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "code": "invalid_type",
+            "expected": "array",
+            "received": "function",
+            "path": [
+              "$extensions",
+              "someExtension"
+            ],
+            "message": "Expected array, received function"
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [
+      "$extensions",
+      "someExtension"
+    ],
+    "message": "Invalid input"
+  }
+]]
+`;
+
+exports[`designTokenDefinitions > validateSpecifyDesignTokenTypeName > should fail validating a token type name containing "." 1`] = `
+[ZodError: [
+  {
+    "code": "invalid_union",
+    "unionErrors": [
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "string",
+            "path": [],
+            "message": "Invalid literal value, expected \\"string\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "number",
+            "path": [],
+            "message": "Invalid literal value, expected \\"number\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "boolean",
+            "path": [],
+            "message": "Invalid literal value, expected \\"boolean\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "null",
+            "path": [],
+            "message": "Invalid literal value, expected \\"null\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "array",
+            "path": [],
+            "message": "Invalid literal value, expected \\"array\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "object",
+            "path": [],
+            "message": "Invalid literal value, expected \\"object\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "integerNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"integerNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "zeroToOneNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"zeroToOneNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "arcDegreeNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"arcDegreeNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "rgbColorNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"rgbColorNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "positiveNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"positiveNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "positiveIntegerNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"positiveIntegerNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "percentageNumber",
+            "path": [],
+            "message": "Invalid literal value, expected \\"percentageNumber\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "hexadecimalColorString",
+            "path": [],
+            "message": "Invalid literal value, expected \\"hexadecimalColorString\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "bitmap",
+            "path": [],
+            "message": "Invalid literal value, expected \\"bitmap\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "bitmapFormat",
+            "path": [],
+            "message": "Invalid literal value, expected \\"bitmapFormat\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "bitmaps",
+            "path": [],
+            "message": "Invalid literal value, expected \\"bitmaps\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "blur",
+            "path": [],
+            "message": "Invalid literal value, expected \\"blur\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "border",
+            "path": [],
+            "message": "Invalid literal value, expected \\"border\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "borderStyle",
+            "path": [],
+            "message": "Invalid literal value, expected \\"borderStyle\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "borderStyleLineCap",
+            "path": [],
+            "message": "Invalid literal value, expected \\"borderStyleLineCap\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "breakpoint",
+            "path": [],
+            "message": "Invalid literal value, expected \\"breakpoint\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "color",
+            "path": [],
+            "message": "Invalid literal value, expected \\"color\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "cubicBezier",
+            "path": [],
+            "message": "Invalid literal value, expected \\"cubicBezier\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "dimension",
+            "path": [],
+            "message": "Invalid literal value, expected \\"dimension\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "dimensionUnit",
+            "path": [],
+            "message": "Invalid literal value, expected \\"dimensionUnit\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "duration",
+            "path": [],
+            "message": "Invalid literal value, expected \\"duration\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "durationUnit",
+            "path": [],
+            "message": "Invalid literal value, expected \\"durationUnit\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "font",
+            "path": [],
+            "message": "Invalid literal value, expected \\"font\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "fontFamily",
+            "path": [],
+            "message": "Invalid literal value, expected \\"fontFamily\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "fontFeature",
+            "path": [],
+            "message": "Invalid literal value, expected \\"fontFeature\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "fontFeatures",
+            "path": [],
+            "message": "Invalid literal value, expected \\"fontFeatures\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "fontFormat",
+            "path": [],
+            "message": "Invalid literal value, expected \\"fontFormat\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "fontStyle",
+            "path": [],
+            "message": "Invalid literal value, expected \\"fontStyle\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "fontWeight",
+            "path": [],
+            "message": "Invalid literal value, expected \\"fontWeight\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "gradient",
+            "path": [],
+            "message": "Invalid literal value, expected \\"gradient\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "gradients",
+            "path": [],
+            "message": "Invalid literal value, expected \\"gradients\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "opacity",
+            "path": [],
+            "message": "Invalid literal value, expected \\"opacity\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "radii",
+            "path": [],
+            "message": "Invalid literal value, expected \\"radii\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "radius",
+            "path": [],
+            "message": "Invalid literal value, expected \\"radius\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "shadow",
+            "path": [],
+            "message": "Invalid literal value, expected \\"shadow\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "shadows",
+            "path": [],
+            "message": "Invalid literal value, expected \\"shadows\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "shadowType",
+            "path": [],
+            "message": "Invalid literal value, expected \\"shadowType\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "spacing",
+            "path": [],
+            "message": "Invalid literal value, expected \\"spacing\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "spacings",
+            "path": [],
+            "message": "Invalid literal value, expected \\"spacings\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "stepsTimingFunction",
+            "path": [],
+            "message": "Invalid literal value, expected \\"stepsTimingFunction\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "textAlignHorizontal",
+            "path": [],
+            "message": "Invalid literal value, expected \\"textAlignHorizontal\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "textAlignVertical",
+            "path": [],
+            "message": "Invalid literal value, expected \\"textAlignVertical\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "textDecoration",
+            "path": [],
+            "message": "Invalid literal value, expected \\"textDecoration\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "textStyle",
+            "path": [],
+            "message": "Invalid literal value, expected \\"textStyle\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "textTransform",
+            "path": [],
+            "message": "Invalid literal value, expected \\"textTransform\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "transition",
+            "path": [],
+            "message": "Invalid literal value, expected \\"transition\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "vector",
+            "path": [],
+            "message": "Invalid literal value, expected \\"vector\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "vectorFormat",
+            "path": [],
+            "message": "Invalid literal value, expected \\"vectorFormat\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "vectors",
+            "path": [],
+            "message": "Invalid literal value, expected \\"vectors\\""
+          }
+        ],
+        "name": "ZodError"
+      },
+      {
+        "issues": [
+          {
+            "received": "a.color",
+            "code": "invalid_literal",
+            "expected": "zIndex",
+            "path": [],
+            "message": "Invalid literal value, expected \\"zIndex\\""
+          }
+        ],
+        "name": "ZodError"
+      }
+    ],
+    "path": [],
+    "message": "Invalid input"
+  }
+]]
+`;
+
+exports[`designTokenDefinitions > validateSpecifyNonAliasableDesignToken > should validate all available token types 1`] = `
+[ZodError: [
+  {
+    "code": "custom",
+    "message": "$mode cannot start with a \\"$\\"",
+    "path": [
+      "$value",
+      "$alias"
+    ]
+  },
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "string",
+    "path": [
+      "$value",
+      "$alias"
+    ],
+    "message": "Expected object, received string"
+  }
+]]
+`;
